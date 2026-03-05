@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMAD 方法 - 让 AI 成为你的专家团队</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .agent-card {
+            transition: all 0.3s ease;
+        }
+        .flow-arrow {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 导航 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-purple-600">BMAD</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#what" class="text-gray-600 hover:text-purple-600">什么是 BMAD</a>
+                <a href="#concepts" class="text-gray-600 hover:text-purple-600">核心概念</a>
+                <a href="#start" class="text-gray-600 hover:text-purple-600">快速入门</a>
+                <a href="#case" class="text-gray-600 hover:text-purple-600">实战案例</a>
+                <a href="#ecosystem" class="text-gray-600 hover:text-purple-600">工具生态</a>
+            </div>
+            <a href="#start" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">开始使用</a>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">BMAD 方法</h1>
+            <p class="text-xl md:text-2xl mb-4 opacity-90">Breakthrough Method for Agile AI-Driven Development</p>
+            <p class="text-lg md:text-xl mb-8 opacity-80">让 AI 成为你的专家团队，完成从想法到上线的全流程</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#start" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">5 分钟上手</a>
+                <a href="#case" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">查看案例</a>
+            </div>
+            
+            <!-- 核心数据 -->
+            <div class="flex justify-center space-x-8 md:space-x-16 mt-12">
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold">12+</div>
+                    <div class="opacity-80">专业 Agent</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold">34+</div>
+                    <div class="opacity-80">工作流</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold">70%</div>
+                    <div class="opacity-80">Token 节省</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 什么是 BMAD -->
+    <section id="what" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">什么是 BMAD？</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">BMAD 不是让 AI 替你思考，而是让 AI 作为专家协作者，引导你产出最佳想法</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl card-hover transition">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-semibold mb-3">解决什么问题？</h3>
+                    <p class="text-gray-600">传统 AI 辅助开发容易产生「上下文丢失」和「偷懒输出」。BMAD 通过结构化工作流和专业 Agent，确保每个环节都有完整上下文。</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl card-hover transition">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold mb-3">核心理念</h3>
+                    <p class="text-gray-600">模拟真实开发团队的专业化分工：分析师调研、PM 写需求、架构师设计、开发者实现、QA 测试——每个角色都是专业 Agent。</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl card-hover transition">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-semibold mb-3">规模自适应</h3>
+                    <p class="text-gray-600">从修复一个 bug 到构建企业级系统，BMAD 自动调整规划深度。小项目快速执行，大项目深度规划。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心概念：四阶段流程 -->
+    <section id="concepts" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">核心概念</h2>
+            <p class="text-gray-600 text-center mb-12">四个阶段，专业 Agent 接力协作</p>
+            
+            <!-- 流程图 -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-2 mb-12">
+                <!-- 分析 -->
+                <div class="agent-card bg-white p-6 rounded-xl shadow-md w-full md:w-56 text-center">
+                    <div class="text-3xl mb-2">🔍</div>
+                    <h3 class="font-bold text-lg text-purple-600">分析阶段</h3>
+                    <p class="text-sm text-gray-500 mb-2">Analysis</p>
+                    <div class="bg-purple-50 rounded-lg p-2 mt-3">
+                        <span class="text-sm font-medium">Mary (分析师)</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">头脑风暴、市场调研、产品简报</p>
+                </div>
+                
+                <div class="flow-arrow text-3xl hidden md:block">→</div>
+                <div class="flow-arrow text-3xl md:hidden">↓</div>
+                
+                <!-- 规划 -->
+                <div class="agent-card bg-white p-6 rounded-xl shadow-md w-full md:w-56 text-center">
+                    <div class="text-3xl mb-2">📋</div>
+                    <h3 class="font-bold text-lg text-blue-600">规划阶段</h3>
+                    <p class="text-sm text-gray-500 mb-2">Planning</p>
+                    <div class="bg-blue-50 rounded-lg p-2 mt-3">
+                        <span class="text-sm font-medium">John (PM)</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">PRD、用户故事、Epic 分解</p>
+                </div>
+                
+                <div class="flow-arrow text-3xl hidden md:block">→</div>
+                <div class="flow-arrow text-3xl md:hidden">↓</div>
+                
+                <!-- 方案 -->
+                <div class="agent-card bg-white p-6 rounded-xl shadow-md w-full md:w-56 text-center">
+                    <div class="text-3xl mb-2">🏗️</div>
+                    <h3 class="font-bold text-lg text-green-600">方案阶段</h3>
+                    <p class="text-sm text-gray-500 mb-2">Solutioning</p>
+                    <div class="bg-green-50 rounded-lg p-2 mt-3">
+                        <span class="text-sm font-medium">Winston (架构师)</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">系统架构、技术选型、就绪检查</p>
+                </div>
+                
+                <div class="flow-arrow text-3xl hidden md:block">→</div>
+                <div class="flow-arrow text-3xl md:hidden">↓</div>
+                
+                <!-- 实现 -->
+                <div class="agent-card bg-white p-6 rounded-xl shadow-md w-full md:w-56 text-center">
+                    <div class="text-3xl mb-2">⚡</div>
+                    <h3 class="font-bold text-lg text-orange-600">实现阶段</h3>
+                    <p class="text-sm text-gray-500 mb-2">Implementation</p>
+                    <div class="bg-orange-50 rounded-lg p-2 mt-3">
+                        <span class="text-sm font-medium">Amelia (开发者)</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Sprint 开发、代码审查、部署</p>
+                </div>
+            </div>
+            
+            <!-- 两大创新 -->
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-3">🎭</span>
+                        代理化规划 (Agentic Planning)
+                    </h3>
+                    <p class="text-gray-600 mb-4">传统 AI 生成的需求文档过于简单。BMAD 让专业 Agent 团队协作规划，产出企业级质量的 PRD 和架构文档。</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• 专业代理团队协作</li>
+                        <li>• 人机协作确保质量</li>
+                        <li>• 详细输出，可执行落地</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-3">🧠</span>
+                        上下文工程 (Context Engineering)
+                    </h3>
+                    <p class="text-gray-600 mb-4">开发过程中最大的问题是上下文丢失。BMAD 将完整上下文嵌入每个开发故事，开发者打开就知道做什么、怎么做。</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• 智能故事生成</li>
+                        <li>• 嵌入式知识</li>
+                        <li>• 无缝交接</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速入门 -->
+    <section id="start" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">快速入门</h2>
+            <p class="text-gray-600 text-center mb-12">3 步开始使用 BMAD</p>
+            
+            <div class="space-y-6">
+                <!-- Step 1 -->
+                <div class="flex items-start gap-4">
+                    <div class="bg-purple-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg mb-2">安装 BMAD</h3>
+                        <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                            npx bmad-method install
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">运行安装器，选择需要的模块（默认安装核心模块 BMM）</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="flex items-start gap-4">
+                    <div class="bg-purple-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg mb-2">打开 AI IDE</h3>
+                        <p class="text-gray-600">在项目文件夹中启动你喜欢的 AI IDE：</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded text-sm">Claude Code</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded text-sm">Cursor</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded text-sm">Windsurf</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded text-sm">Cline</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="flex items-start gap-4">
+                    <div class="bg-purple-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg mb-2">开始工作</h3>
+                        <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                            /bmad-help
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">随时获取上下文感知的帮助，或直接召唤 Agent：</p>
+                        <div class="bg-gray-100 p-4 rounded-lg mt-2 text-sm">
+                            <p><span class="text-purple-600 font-medium">"请帮我做头脑风暴"</span> → Mary 分析师上线</p>
+                            <p><span class="text-purple-600 font-medium">"请创建 PRD"</span> → John PM 接管</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/bmad-code-org/BMAD-METHOD" target="_blank" class="inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub 仓库
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实战案例 -->
+    <section id="case" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">实战案例</h2>
+            <p class="text-gray-600 text-center mb-12">真实项目，真实效果</p>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 gradient-bg p-8 text-white">
+                        <div class="text-6xl mb-4">🚀</div>
+                        <h3 class="text-2xl font-bold mb-2">边缘计算平台</h3>
+                        <p class="opacity-80">高并发系统重构</p>
+                        <div class="mt-6 space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>代码规模</span>
+                                <span class="font-bold">50万+ 行</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>开发周期</span>
+                                <span class="font-bold">3 个月</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>效率提升</span>
+                                <span class="font-bold">300%+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h4 class="font-bold text-lg mb-4">项目背景</h4>
+                        <p class="text-gray-600 mb-4">作为边缘计算负责人，古道西风需要重构一个高并发的分布式系统。传统开发方式估计需要 9+ 个月，但使用 BMAD 方法后...</p>
+                        
+                        <h4 class="font-bold text-lg mb-4">BMAD 如何帮助</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Mary 分析师完成了完整的技术调研和架构分析</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Winston 架构师设计了微服务拆分方案，避免了常见的分布式陷阱</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Bob Scrum Master 将大任务分解为可管理的 Sprint，每个 Story 都有完整上下文</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Amelia 开发者高效实现，代码质量始终在线</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-6 p-4 bg-purple-50 rounded-lg">
+                            <p class="text-purple-800 italic">"BMAD 让我第一次体验到 AI 真正能成为团队成员，而不只是代码补全工具。"</p>
+                            <p class="text-purple-600 font-medium mt-2">— 古道西风</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 更多案例预告 -->
+            <div class="text-center mt-8">
+                <p class="text-gray-500">更多案例持续更新中...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工具生态 -->
+    <section id="ecosystem" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">工具生态</h2>
+            <p class="text-gray-600 text-center mb-12">BMAD 已集成到主流 AI 开发平台</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border rounded-xl p-6 hover:border-purple-300 transition">
+                    <h3 class="font-bold text-lg mb-2">Claude Code Skills</h3>
+                    <p class="text-gray-600 text-sm mb-4">Claude Code 原生集成，9 个专业 Agent，15 个工作流命令，Token 节省 70-85%</p>
+                    <a href="https://github.com/aj-geddes/claude-code-bmad-skills" target="_blank" class="text-purple-600 text-sm hover:underline">查看项目 →</a>
+                </div>
+                <div class="border rounded-xl p-6 hover:border-purple-300 transition">
+                    <h3 class="font-bold text-lg mb-2">OpenClaw 插件</h3>
+                    <p class="text-gray-600 text-sm mb-4">OpenClaw 平台适配，多代理隔离架构，支持 YOLO 和交互两种模式</p>
+                    <a href="https://github.com/ErwanLorteau/BMAD_Openclaw" target="_blank" class="text-purple-600 text-sm hover:underline">查看项目 →</a>
+                </div>
+                <div class="border rounded-xl p-6 hover:border-purple-300 transition">
+                    <h3 class="font-bold text-lg mb-2">CLI 自动化工具</h3>
+                    <p class="text-gray-600 text-sm mb-4">Go 实现的高性能 CLI，完整 Story 生命周期自动化，支持 Epic 批处理</p>
+                    <a href="https://github.com/robertguss/bmad_automated" target="_blank" class="text-purple-600 text-sm hover:underline">查看项目 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">准备好开始了吗？</h2>
+            <p class="text-xl opacity-90 mb-8">加入 39,000+ 开发者，体验 AI 驱动的敏捷开发</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/bmad-code-org/BMAD-METHOD" target="_blank" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">GitHub 仓库</a>
+                <a href="https://discord.gg/gk8jAdXWmj" target="_blank" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">加入社区</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">BMAD</h4>
+                    <p class="text-sm">Breakthrough Method for Agile AI-Driven Development</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">文档</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#what" class="hover:text-white">什么是 BMAD</a></li>
+                        <li><a href="#concepts" class="hover:text-white">核心概念</a></li>
+                        <li><a href="#start" class="hover:text-white">快速入门</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">资源</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://github.com/bmad-code-org/BMAD-METHOD" target="_blank" class="hover:text-white">GitHub</a></li>
+                        <li><a href="https://docs.bmad-method.org" target="_blank" class="hover:text-white">官方文档</a></li>
+                        <li><a href="https://discord.gg/gk8jAdXWmj" target="_blank" class="hover:text-white">Discord</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">关于</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#case" class="hover:text-white">实战案例</a></li>
+                        <li><a href="https://www.youtube.com/@BMadCode" target="_blank" class="hover:text-white">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>本站由 <a href="#" class="text-purple-400 hover:text-purple-300">古道西风</a> 基于 BMAD 实战经验创建</p>
+                <p class="mt-2">© 2026 BMAD Method. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
