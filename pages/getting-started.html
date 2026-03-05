@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速入门 - BMAD 方法</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">BMAD</a>
+            <ul class="nav-links">
+                <li><a href="about.html">关于 BMAD</a></li>
+                <li><a href="/">规划轨道</a></li>
+                <li><a href="/">四阶段流程</a></li>
+                <li><a href="getting-started.html" style="color:var(--primary);">快速入门</a></li>
+            </ul>
+            <a href="https://docs.bmad-method.org" target="_blank" class="nav-cta">官方文档</a>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <div class="page-header">
+        <h1>快速入门</h1>
+        <p>3 步开始使用 BMAD</p>
+    </div>
+
+    <!-- 面包屑 -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="/">首页</a> <span>/</span> <a href="#">快速入门</a>
+        </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="content">
+        <p class="text-center" style="font-size:1.125rem;margin-bottom:3rem;">
+            在几分钟内安装并运行 BMAD，开始体验 AI 驱动的敏捷开发。
+        </p>
+
+        <!-- Step 1 -->
+        <h2>第一步：安装 BMAD</h2>
+        <p>打开终端，在项目目录中运行：</p>
+        <div class="code-block">npx bmad-method install</div>
+        <p>安装器会引导你选择模块。选择 <strong>BMad Method (BMM)</strong> 作为核心模块。</p>
+        
+        <p class="mt-4">安装完成后，会创建两个文件夹：</p>
+        <ul>
+            <li><code>_bmad/</code> — agents、workflows、tasks 和配置文件</li>
+            <li><code>_bmad-output/</code> — 产出文件目录</li>
+        </ul>
+
+        <!-- Step 2 -->
+        <h2>第二步：打开 AI IDE</h2>
+        <p>在项目文件夹中启动你喜欢的 AI IDE：</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;">
+            <span style="background:white;border:1px solid var(--gray-300);padding:0.5rem 1rem;border-radius:0.5rem;">Claude Code</span>
+            <span style="background:white;border:1px solid var(--gray-300);padding:0.5rem 1rem;border-radius:0.5rem;">Cursor</span>
+            <span style="background:white;border:1px solid var(--gray-300);padding:0.5rem 1rem;border-radius:0.5rem;">Windsurf</span>
+            <span style="background:white;border:1px solid var(--gray-300);padding:0.5rem 1rem;border-radius:0.5rem;">Cline</span>
+        </div>
+
+        <!-- Step 3 -->
+        <h2>第三步：开始使用</h2>
+        <p>在 AI IDE 中运行：</p>
+        <div class="code-block">/bmad-help</div>
+        <p>BMad-Help 会检测你的项目状态，告诉你下一步做什么。</p>
+
+        <div style="background:var(--gray-100);padding:1rem;border-radius:0.5rem;margin-top:1rem;">
+            <p style="font-weight:600;margin-bottom:0.5rem;">试试问：</p>
+            <p style="color:var(--primary);">"我有一个 SaaS 产品的想法，应该从哪里开始？"</p>
+        </div>
+
+        <!-- 四阶段流程概述 -->
+        <h2>理解四阶段流程</h2>
+        <p>BMAD 通过四个阶段帮助你构建软件：</p>
+
+        <div style="margin-top:1.5rem;">
+            <div style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+                <div style="flex-shrink:0;width:3rem;height:3rem;background:#8b5cf6;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">1</div>
+                <div>
+                    <h3 style="font-size:1.125rem;font-weight:bold;margin-bottom:0.25rem;">Analysis (可选)</h3>
+                    <p style="font-size:0.875rem;color:var(--gray-600);">头脑风暴、研究、产品简报</p>
+                </div>
+            </div>
+
+            <div style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+                <div style="flex-shrink:0;width:3rem;height:3rem;background:#3b82f6;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">2</div>
+                <div>
+                    <h3 style="font-size:1.125rem;font-weight:bold;margin-bottom:0.25rem;">Planning (必须)</h3>
+                    <p style="font-size:0.875rem;color:var(--gray-600);">创建 PRD 或 Tech-spec</p>
+                </div>
+            </div>
+
+            <div style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+                <div style="flex-shrink:0;width:3rem;height:3rem;background:#22c55e;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">3</div>
+                <div>
+                    <h3 style="font-size:1.125rem;font-weight:bold;margin-bottom:0.25rem;">Solutioning (Method/Enterprise)</h3>
+                    <p style="font-size:0.875rem;color:var(--gray-600);">设计架构，分解 Epics 和 Stories</p>
+                </div>
+            </div>
+
+            <div style="display:flex;gap:1rem;">
+                <div style="flex-shrink:0;width:3rem;height:3rem;background:#f97316;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">4</div>
+                <div>
+                    <h3 style="font-size:1.125rem;font-weight:bold;margin-bottom:0.25rem;">Implementation</h3>
+                    <p style="font-size:0.875rem;color:var(--gray-600);">Sprint 开发，循环迭代</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 常用命令 -->
+        <h2>常用命令</h2>
+        <table style="width:100%;border-collapse:collapse;margin-top:1rem;font-size:0.875rem;">
+            <thead>
+                <tr style="border-bottom:2px solid var(--gray-200);">
+                    <th style="padding:0.75rem;text-align:left;">命令</th>
+                    <th style="padding:0.75rem;text-align:left;">Agent</th>
+                    <th style="padding:0.75rem;text-align:left;">用途</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom:1px solid var(--gray-200);">
+                    <td style="padding:0.75rem;font-family:monospace;color:var(--primary);">/bmad-help</td>
+                    <td style="padding:0.75rem;">Any</td>
+                    <td style="padding:0.75rem;">智能向导，问任何问题</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--gray-200);">
+                    <td style="padding:0.75rem;font-family:monospace;color:var(--primary);">/bmad-bmm-create-prd</td>
+                    <td style="padding:0.75rem;">PM</td>
+                    <td style="padding:0.75rem;">创建产品需求文档</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--gray-200);">
+                    <td style="padding:0.75rem;font-family:monospace;color:var(--primary);">/bmad-bmm-create-architecture</td>
+                    <td style="padding:0.75rem;">Architect</td>
+                    <td style="padding:0.75rem;">创建架构设计文档</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--gray-200);">
+                    <td style="padding:0.75rem;font-family:monospace;color:var(--primary);">/bmad-bmm-create-epics-and-stories</td>
+                    <td style="padding:0.75rem;">PM</td>
+                    <td style="padding:0.75rem;">分解 Epics 和 Stories</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--gray-200);">
+                    <td style="padding:0.75rem;font-family:monospace;color:var(--primary);">/bmad-bmm-sprint-planning</td>
+                    <td style="padding:0.75rem;">SM</td>
+                    <td style="padding:0.75rem;">初始化 Sprint 追踪</td>
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem;font-family:monospace;color:var(--primary);">/bmad-bmm-dev-story</td>
+                    <td style="padding:0.75rem;">DEV</td>
+                    <td style="padding:0.75rem;">开发 Story</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 下一步 -->
+        <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:2rem;border-radius:1rem;text-align:center;margin-top:3rem;">
+            <h2 style="color:white;margin-bottom:1rem;">准备好深入了吗？</h2>
+            <p style="margin-bottom:1.5rem;">阅读完整文档了解更多</p>
+            <a href="https://docs.bmad-method.org/tutorials/getting-started/" target="_blank" style="background:white;color:var(--primary);padding:0.75rem 2rem;border-radius:0.5rem;font-weight:600;display:inline-block;">阅读完整教程</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 BMAD Method. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
